@@ -6,6 +6,7 @@ class ManagerPage(BasePage):
 
     ADD_CUSTOMER_TAB = (By.CSS_SELECTOR, "button[ng-click='addCust()']")
     CUSTOMERS_TAB = (By.CSS_SELECTOR, "button[ng-click='showCust()']")
+    OPEN_ACCOUNT = (By.CSS_SELECTOR, "button[ng-click='openAccount()']")
 
     def open(self):
         self._driver.get(self.URL)
@@ -15,3 +16,6 @@ class ManagerPage(BasePage):
 
     def ir_para_clientes_tab(self):
         self.clicar_no_elemento(self.CUSTOMERS_TAB)
+
+    def ir_para_abrir_account_tab(self):
+        self.clicar_no_elemento(self.OPEN_ACCOUNT)

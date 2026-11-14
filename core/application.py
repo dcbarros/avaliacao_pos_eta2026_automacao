@@ -4,6 +4,7 @@ from pages.add_customer_page import AddCustomerPage
 from pages.customers_page import CustomersPage
 from pages.login_page import LoginPage
 from pages.manager_page import ManagerPage
+from pages.open_account_page import OpenAccountPage
 from pages.transactions_page import TransactionsPage
 
 
@@ -17,6 +18,7 @@ class XYZBankApp:
         self.customers_page: CustomersPage | None = None
         self.account_page: AccountPage | None = None
         self.transactions_page: TransactionsPage | None = None
+        self.open_account_page: OpenAccountPage | None = None
 
     def __enter__(self):
         driver = self.__browser.iniciar()
@@ -28,6 +30,7 @@ class XYZBankApp:
             self.customers_page = CustomersPage(driver)
             self.account_page = AccountPage(driver)
             self.transactions_page = TransactionsPage(driver)
+            self.open_account_page = OpenAccountPage(driver)
         except BaseException:
             self.__browser.fechar()
             raise

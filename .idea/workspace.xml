@@ -4,13 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="248207e0-6411-4d7e-8d32-26fc23d3a5eb" name="Changes" comment="Opaaaaa">
-      <change afterPath="$PROJECT_DIR$/tests/teste_4.py" afterDir="false" />
+    <list default="true" id="248207e0-6411-4d7e-8d32-26fc23d3a5eb" name="Changes" comment="Commit 3 do exercício 3 e ajustes do 1">
+      <change afterPath="$PROJECT_DIR$/pages/open_account_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_ct02.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/add_customer_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/add_customer_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/application.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/customers_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/customers_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login_page.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/manager_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/manager_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_ct01.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_3.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_ct03.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_4.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_ct04.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,61 +46,61 @@
 }</component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.0" />
-      <entry key="MS500" value="1.0" />
-      <entry key="S2" value="1.0" />
-      <entry key="S5" value="1.0000000002656055" />
-      <entry key="S10" value="1.0000266981137038" />
-      <entry key="S30" value="1.0847840051739124" />
-      <entry key="S60" value="1.7962288072468717" />
-      <entry key="M2" value="3.7363737921000877" />
-      <entry key="M5" value="7.155522193083914" />
-      <entry key="M10" value="9.553825972338968" />
-      <entry key="M15" value="11.067138266229444" />
-      <entry key="M30" value="13.901735573459021" />
-      <entry key="H1" value="16.49968539043589" />
-      <entry key="H2" value="18.404630022696278" />
-      <entry key="H4" value="19.595024320376712" />
-      <entry key="D1" value="20.74858577089495" />
-      <entry key="W1" value="20.963625575566986" />
+      <entry key="MS100" value="1.0000001388470634" />
+      <entry key="MS500" value="1.0425315294936504" />
+      <entry key="S2" value="1.5285212304350164" />
+      <entry key="S5" value="2.308568091087084" />
+      <entry key="S10" value="3.2568057064782123" />
+      <entry key="S30" value="4.714004620059295" />
+      <entry key="S60" value="5.292248783588883" />
+      <entry key="M2" value="5.679775631634338" />
+      <entry key="M5" value="7.126175913048835" />
+      <entry key="M10" value="11.961018555293899" />
+      <entry key="M15" value="17.703528813752353" />
+      <entry key="M30" value="31.903137342785072" />
+      <entry key="H1" value="47.27999968676271" />
+      <entry key="H2" value="59.48669774120849" />
+      <entry key="H4" value="67.41018238338219" />
+      <entry key="D1" value="75.26670006534704" />
+      <entry key="W1" value="76.74878434454526" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
       <entry key="MS500" value="0.0" />
-      <entry key="S2" value="0.0" />
-      <entry key="S5" value="0.0" />
-      <entry key="S10" value="0.0" />
-      <entry key="S30" value="0.0" />
-      <entry key="S60" value="0.0" />
-      <entry key="M2" value="0.0" />
-      <entry key="M5" value="0.0" />
-      <entry key="M10" value="0.0" />
-      <entry key="M15" value="0.0" />
-      <entry key="M30" value="0.0" />
-      <entry key="H1" value="0.0" />
-      <entry key="H2" value="0.0" />
-      <entry key="H4" value="0.0" />
-      <entry key="D1" value="0.0" />
-      <entry key="W1" value="0.0" />
+      <entry key="S2" value="9.921400166218575E-208" />
+      <entry key="S5" value="1.5798984996557341E-83" />
+      <entry key="S10" value="3.974793704905619E-42" />
+      <entry key="S30" value="1.584059648462488E-14" />
+      <entry key="S60" value="1.2585943144883854E-7" />
+      <entry key="M2" value="3.5476672821565207E-4" />
+      <entry key="M5" value="0.041684745383878036" />
+      <entry key="M10" value="0.20416842406179775" />
+      <entry key="M15" value="0.3467307702548994" />
+      <entry key="M30" value="0.5888384925044386" />
+      <entry key="H1" value="0.7673581253263944" />
+      <entry key="H2" value="0.8759897975013146" />
+      <entry key="H4" value="0.9359432661765956" />
+      <entry key="D1" value="0.9890272418454212" />
+      <entry key="W1" value="0.9984250411371721" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="0.9201876506248751" />
-      <entry key="MS500" value="0.9835020740262483" />
-      <entry key="S2" value="0.9958497530944581" />
-      <entry key="S5" value="0.9983378299596554" />
-      <entry key="S10" value="0.9991947400482962" />
-      <entry key="S30" value="1.0838695340995739" />
-      <entry key="S60" value="1.7933771656664688" />
-      <entry key="M2" value="3.732265374045867" />
-      <entry key="M5" value="7.152330166561332" />
-      <entry key="M10" value="9.551702974012878" />
-      <entry key="M15" value="11.065464447305397" />
-      <entry key="M30" value="13.90062715998153" />
-      <entry key="H1" value="16.49900007318937" />
-      <entry key="H2" value="18.404238935629262" />
-      <entry key="H4" value="19.594813701095187" />
-      <entry key="D1" value="20.74854824583704" />
-      <entry key="W1" value="20.963620150586777" />
+      <entry key="MS100" value="0.9659364621158515" />
+      <entry key="MS500" value="1.0352717248198662" />
+      <entry key="S2" value="1.5256936765789861" />
+      <entry key="S5" value="2.306816129354204" />
+      <entry key="S10" value="3.2555742820194595" />
+      <entry key="S30" value="4.713418052957234" />
+      <entry key="S60" value="5.291913793326632" />
+      <entry key="M2" value="5.679738979986513" />
+      <entry key="M5" value="7.165782139331755" />
+      <entry key="M10" value="12.161446514496545" />
+      <entry key="M15" value="18.04626046381818" />
+      <entry key="M30" value="32.48858811512831" />
+      <entry key="H1" value="48.045034306000105" />
+      <entry key="H2" value="60.361288732967814" />
+      <entry key="H4" value="68.34535017865035" />
+      <entry key="D1" value="76.25558550593634" />
+      <entry key="W1" value="77.74718878966152" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -111,7 +115,9 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "Python tests.Python tests for tests.test_2.test_ct02_abrir_conta_para_um_cliente.executor": "Debug",
     "Python tests.Python tests for tests.test_3.test_ct03_pesquisa_filtra_clientes_por_qualquer_coluna.executor": "Run",
+    "Python tests.Python tests for tests.test_ct02.test_ct02_abrir_conta_para_um_cliente.executor": "Run",
     "Python tests.Python tests for tests.test_ct09.test_ct09_registrar_deposito_e_saque_no_extrato.executor": "Run",
     "Python tests.Python tests for tests.teste_2.test_ct02_adicionar_cliente_exibe_mensagem_de_sucesso.executor": "Run",
     "Python tests.Python tests for tests.teste_3.test_ct03_pesquisa_filtra_clientes_por_qualquer_coluna.executor": "Run",
@@ -120,7 +126,7 @@
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "feat/ct03",
+    "git-widget-placeholder": "feat/ct02__2",
     "junie.onboarding.icon.badge.shown": "true",
     "last_opened_file_path": "C:/Projeto_Avaliação_automação/avaliacao_pos_eta2026_automacao",
     "node.js.detected.package.eslint": "true",
@@ -139,24 +145,7 @@
       <recent name="C:\Users\miche\PycharmProjects\AVALIAÇÃO_POS_ETA2026_AUTOMAÇÃO\avaliacao_pos_eta2026_automacao\pages" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for tests.test_3.test_ct03_pesquisa_filtra_clientes_por_qualquer_coluna">
-    <configuration name="Python tests for tests.test_1" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="avaliacao_pos_eta2026_automacao" />
-      <option name="ENV_FILES" value="" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="DEBUG_JUST_MY_CODE" value="false" />
-      <option name="RUN_TOOL" value="" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.test_1&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Python tests.Python tests for tests.test_ct02.test_ct02_abrir_conta_para_um_cliente">
     <configuration name="Python tests for tests.test_3.test_ct03_pesquisa_filtra_clientes_por_qualquer_coluna" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="avaliacao_pos_eta2026_automacao" />
       <option name="ENV_FILES" value="" />
@@ -174,7 +163,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for tests.test_3.test_ct03_pesquisa_filtra_clientes_por_qualquer_coluna" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for tests.test_ct01" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="avaliacao_pos_eta2026_automacao" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -187,7 +176,41 @@
       <option name="DEBUG_JUST_MY_CODE" value="false" />
       <option name="RUN_TOOL" value="" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.test_3.test_ct03_pesquisa_filtra_clientes_por_qualquer_coluna&quot;" />
+      <option name="_new_target" value="&quot;tests.test_ct01&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for tests.test_ct02.test_ct02_abrir_conta_para_um_cliente" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="avaliacao_pos_eta2026_automacao" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <option name="RUN_TOOL" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.test_ct02.test_ct02_abrir_conta_para_um_cliente&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for tests.test_ct03.test_ct03_pesquisa_filtra_clientes_por_qualquer_coluna" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="avaliacao_pos_eta2026_automacao" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <option name="RUN_TOOL" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.test_ct03.test_ct03_pesquisa_filtra_clientes_por_qualquer_coluna&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -210,10 +233,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for tests.test_3.test_ct03_pesquisa_filtra_clientes_por_qualquer_coluna" />
+        <item itemvalue="Python tests.Python tests for tests.test_ct02.test_ct02_abrir_conta_para_um_cliente" />
+        <item itemvalue="Python tests.Python tests for tests.test_ct03.test_ct03_pesquisa_filtra_clientes_por_qualquer_coluna" />
         <item itemvalue="Python tests.Python tests for tests.test_ct09.test_ct09_registrar_deposito_e_saque_no_extrato" />
         <item itemvalue="Python tests.Python tests for tests.test_3.test_ct03_pesquisa_filtra_clientes_por_qualquer_coluna" />
-        <item itemvalue="Python tests.Python tests for tests.test_1" />
+        <item itemvalue="Python tests.Python tests for tests.test_ct01" />
       </list>
     </recent_temporary>
   </component>
@@ -280,7 +304,15 @@
       <option name="project" value="LOCAL" />
       <updated>1794663561078</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Commit 3 do exercício 3 e ajustes do 1">
+      <option name="closed" value="true" />
+      <created>1794678529542</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1794678529542</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -289,6 +321,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="vai que funcione." />
     <MESSAGE value="Opaaaaa" />
-    <option name="LAST_COMMIT_MESSAGE" value="Opaaaaa" />
+    <MESSAGE value="Commit 3 do exercício 3 e ajustes do 1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Commit 3 do exercício 3 e ajustes do 1" />
   </component>
 </project>

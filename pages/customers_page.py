@@ -61,4 +61,10 @@ class CustomersPage(BasePage):
             clientes.append((celulas[0].text, celulas[1].text, celulas[2].text))
         return clientes
 
-
+    def pegar_contas_do_cliente(self, primeiro_nome, ultimo_nome):
+        """Retorna os números da coluna Account Number do cliente (lista vazia se ele não aparecer)."""
+        for linha in self.encontrar_elementos(self.CUSTOMER_ROWS):
+            celulas = linha.find_elements(*self.CELLS)
+            if celulas[0].text == primeiro_nome and celulas[1].text == ultimo_nome:
+                return celulas[3].text.split()
+        return []
