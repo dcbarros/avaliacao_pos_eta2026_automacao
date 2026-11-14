@@ -1,6 +1,7 @@
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support.ui import Select
+from selenium.webdriver.common.by import By
 
 class BasePage:
     def __init__(self, driver):
@@ -71,3 +72,20 @@ class BasePage:
         arguments[0].dispatchEvent(new Event('change', { bubbles: true }));
         """
         self._driver.execute_script(script, element, value)
+
+    def selecionar_opcao_pelo_texto(self, locator, texto):
+        dropdown = self.encontrar_elemento(locator)
+        select = Select(dropdown)
+        return select.select_by_visible_text(texto)
+
+
+    def clicar_home(self):
+        self.clicar_no_elemento((By.CSS_SELECTOR, "button.home"))
+
+    def esperar_proximo_segundo(self):
+        from datetime import datetime
+        segundo = datetime.now().second
+        self._wait.until(
+            lambda _: datetime.now().second != segundo,
+            message="O relogio nao virou de segundo",
+        )
