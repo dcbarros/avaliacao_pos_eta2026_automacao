@@ -8,7 +8,7 @@ class CustomersPage(BasePage):
     ACCOUNT_INFOS = (By.XPATH, "//*[contains(text(),'Account Number : ')]//strong")
     ACCOUNT_DEPOSIT_BUTTON = (By.XPATH, "//button[contains(text(),'Deposit')]")
     ACCOUNT_AMOUNT_INPUT = (By.CSS_SELECTOR, '.form-group input')
-    ACCOUNT_AMOUNT_BUTTON = (By.CSS_SELECTOR, '.form-group input')
+    ACCOUNT_AMOUNT_BUTTON = (By.XPATH, '//button[@type="submit"]')
 
     AMOUNT_MESSAGE_SUCCESSFUL = (By.CSS_SELECTOR, '[ng-show="message"]')
 
@@ -28,10 +28,10 @@ class CustomersPage(BasePage):
         self.clicar_no_elemento(self.ACCOUNT_DEPOSIT_BUTTON)
         self.escrever_texto(self.ACCOUNT_AMOUNT_INPUT, amount)
         self.clicar_no_elemento(self.ACCOUNT_AMOUNT_BUTTON)
-
+        
         return(
             self.elemento_possui_texto(self.AMOUNT_MESSAGE_SUCCESSFUL, "Deposit Successful") and
-            self.pegar_informacoes_conta[1] == amount
+            self.pegar_informacoes_conta()["balanco"] == amount
         )
 
 
