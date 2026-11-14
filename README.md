@@ -1,3 +1,1 @@
 # avaliacao_pos_eta2026_automacao
-
-daleeee

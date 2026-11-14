@@ -10,4 +10,4 @@ def app():
 #@pytest.fixture()
 #def login_page(app):
 #    app.login_page.open()
-#    return app.login_page vishiiii daleeeee daleeeeeeee
+#    return app.login_page
