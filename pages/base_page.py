@@ -21,6 +21,15 @@ class BasePage:
         element.clear()
         element.send_keys(text)
 
+    def clear_text(self, locator):
+        self.find_element(locator).clear()
+
+    def wait_for_elements_count(self, locator, count):
+        return self._wait.until(
+            lambda driver: len(driver.find_elements(*locator)) == count,
+            message=f"O locator {locator} não exibiu {count} elemento(s)"
+        )
+
     def select_dropdown_option(self, locator, option_text):
         dropdown = self.find_element(locator)
         select = Select(dropdown)
@@ -41,3 +50,15 @@ class BasePage:
     def element_have_attribute(self, locator, attribute, value):
         return bool(self._wait.until(EC.presence_of_element_located(locator)) and
                     self.find_element(locator).get_attribute(attribute) == value)
+
+    # Alerts nativos (window.alert) ficam fora do DOM: não têm locator,
+    # por isso a leitura é feita trocando o foco do driver para o alert.
+    def get_alert_text(self):
+        alert = self._wait.until(
+            EC.alert_is_present(),
+            message="Nenhum alert foi exibido na tela"
+        )
+        return alert.text
+
+    def accept_alert(self):
+        self._wait.until(EC.alert_is_present()).accept()
