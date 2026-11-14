@@ -1,8 +1,6 @@
-import time
-
 class TestCT06:
 
-    def test_Movimentar_somente_a_conta_selecionada(self, login_page, customers_page):
+    def test_ct06_Movimentar_somente_a_conta_selecionada(self, login_page, customers_page):
         login_page.logar_como_usuario_cliente("2")
 
         # Passo 1:
