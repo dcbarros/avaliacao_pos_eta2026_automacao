@@ -12,6 +12,9 @@ class CustomersPage(BasePage):
 
     AMOUNT_MESSAGE_SUCCESSFUL = (By.CSS_SELECTOR, '[ng-show="message"]')
 
+    def pegar_url(self):
+        return self.pegar_url_atual()
+    
     def seleciona_conta_cliente(self, account_number):
         return self.selecionar_opcao_pelo_texto_visivel(self.ACCOUNT_SELECT, account_number)
 
@@ -23,6 +26,9 @@ class CustomersPage(BasePage):
             "balanco": dados[1].text,
             "moeda": dados[2].text
         }
+
+    def pegar_informacoes_input_amount(self):
+        return self.encontrar_elemento(self.ACCOUNT_AMOUNT_INPUT).get_property("value")
 
     def depositar_valor_em_conta(self, amount):
         self.clicar_no_elemento(self.ACCOUNT_DEPOSIT_BUTTON)

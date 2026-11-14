@@ -29,7 +29,10 @@ class BasePage:
             lambda driver: len(driver.find_elements(*locator)) == count,
             message=f"O locator {locator} não exibiu {count} elemento(s)"
         )
-
+    
+    def pegar_url_atual(self):
+        return self._driver.current_url
+    
     def selecionar_opcao_pelo_valor(self, locator, option_text):
         dropdown = self.encontrar_elemento(locator)
         select = Select(dropdown)
