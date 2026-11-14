@@ -5,14 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="248207e0-6411-4d7e-8d32-26fc23d3a5eb" name="Changes" comment="Opaaaaa">
-      <change afterPath="$PROJECT_DIR$/pages/account_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/transactions_page.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_ct09.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_ct10.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_ct11.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/teste_4.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/application.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/base_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/base_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/add_customer_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/add_customer_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/customers_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/customers_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/manager_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/manager_page.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,31 +34,31 @@
     &quot;assignee&quot;: &quot;mvfs2-ops&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/dcbarros/avaliacao_pos_eta2026_automacao.git",
-    "accountId": "2ba9eb0d-dd25-4fb4-8c5b-7ca3868f839e"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/dcbarros/avaliacao_pos_eta2026_automacao.git&quot;,
+    &quot;accountId&quot;: &quot;2ba9eb0d-dd25-4fb4-8c5b-7ca3868f839e&quot;
   }
-}]]></component>
+}</component>
   <component name="NextEditCompletionFeaturesState">
     <decayedCancelled>
-      <entry key="MS100" value="1.3705758856544228" />
-      <entry key="MS500" value="2.9927663817525505" />
-      <entry key="S2" value="4.311277787942134" />
-      <entry key="S5" value="4.704331962100355" />
-      <entry key="S10" value="4.848552492496774" />
-      <entry key="S30" value="4.952359857172793" />
-      <entry key="S60" value="5.034821784418868" />
-      <entry key="M2" value="5.233238338082699" />
-      <entry key="M5" value="5.60139134183043" />
-      <entry key="M10" value="6.28808318206171" />
-      <entry key="M15" value="7.1487705715948495" />
-      <entry key="M30" value="9.211124132465434" />
-      <entry key="H1" value="11.283090920139477" />
-      <entry key="H2" value="12.844208271959399" />
-      <entry key="H4" value="13.829857709460784" />
-      <entry key="D1" value="14.790161879811437" />
-      <entry key="W1" value="14.969630018470182" />
+      <entry key="MS100" value="1.0" />
+      <entry key="MS500" value="1.0" />
+      <entry key="S2" value="1.0" />
+      <entry key="S5" value="1.0000000002656055" />
+      <entry key="S10" value="1.0000266981137038" />
+      <entry key="S30" value="1.0847840051739124" />
+      <entry key="S60" value="1.7962288072468717" />
+      <entry key="M2" value="3.7363737921000877" />
+      <entry key="M5" value="7.155522193083914" />
+      <entry key="M10" value="9.553825972338968" />
+      <entry key="M15" value="11.067138266229444" />
+      <entry key="M30" value="13.901735573459021" />
+      <entry key="H1" value="16.49968539043589" />
+      <entry key="H2" value="18.404630022696278" />
+      <entry key="H4" value="19.595024320376712" />
+      <entry key="D1" value="20.74858577089495" />
+      <entry key="W1" value="20.963625575566986" />
     </decayedCancelled>
     <decayedSelected>
       <entry key="MS100" value="0.0" />
@@ -82,23 +80,23 @@
       <entry key="W1" value="0.0" />
     </decayedSelected>
     <decayedShown>
-      <entry key="MS100" value="1.165621428295035" />
-      <entry key="MS500" value="2.9095522643333136" />
-      <entry key="S2" value="4.282487972486484" />
-      <entry key="S5" value="4.691871529979844" />
-      <entry key="S10" value="4.842149219977332" />
-      <entry key="S30" value="4.950180568699471" />
-      <entry key="S60" value="5.033689569643663" />
-      <entry key="M2" value="5.232609842433357" />
-      <entry key="M5" value="5.601072250923842" />
-      <entry key="M10" value="6.2877401360526965" />
-      <entry key="M15" value="7.148359398239006" />
-      <entry key="M30" value="9.210692713617634" />
-      <entry key="H1" value="11.282762254070201" />
-      <entry key="H2" value="12.844002147766524" />
-      <entry key="H4" value="13.829741657860332" />
-      <entry key="D1" value="14.790140454316749" />
-      <entry key="W1" value="14.96962690245338" />
+      <entry key="MS100" value="0.9201876506248751" />
+      <entry key="MS500" value="0.9835020740262483" />
+      <entry key="S2" value="0.9958497530944581" />
+      <entry key="S5" value="0.9983378299596554" />
+      <entry key="S10" value="0.9991947400482962" />
+      <entry key="S30" value="1.0838695340995739" />
+      <entry key="S60" value="1.7933771656664688" />
+      <entry key="M2" value="3.732265374045867" />
+      <entry key="M5" value="7.152330166561332" />
+      <entry key="M10" value="9.551702974012878" />
+      <entry key="M15" value="11.065464447305397" />
+      <entry key="M30" value="13.90062715998153" />
+      <entry key="H1" value="16.49900007318937" />
+      <entry key="H2" value="18.404238935629262" />
+      <entry key="H4" value="19.594813701095187" />
+      <entry key="D1" value="20.74854824583704" />
+      <entry key="W1" value="20.963620150586777" />
     </decayedShown>
   </component>
   <component name="ProjectColorInfo">{
@@ -114,13 +112,15 @@
   "keyToString": {
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "Python tests.Python tests for tests.test_3.test_ct03_pesquisa_filtra_clientes_por_qualquer_coluna.executor": "Run",
+    "Python tests.Python tests for tests.test_ct09.test_ct09_registrar_deposito_e_saque_no_extrato.executor": "Run",
     "Python tests.Python tests for tests.teste_2.test_ct02_adicionar_cliente_exibe_mensagem_de_sucesso.executor": "Run",
+    "Python tests.Python tests for tests.teste_3.test_ct03_pesquisa_filtra_clientes_por_qualquer_coluna.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "feat/ct09",
+    "git-widget-placeholder": "feat/ct03",
     "junie.onboarding.icon.badge.shown": "true",
     "last_opened_file_path": "C:/Projeto_Avaliação_automação/avaliacao_pos_eta2026_automacao",
     "node.js.detected.package.eslint": "true",
@@ -140,6 +140,23 @@
     </key>
   </component>
   <component name="RunManager" selected="Python tests.Python tests for tests.test_3.test_ct03_pesquisa_filtra_clientes_por_qualquer_coluna">
+    <configuration name="Python tests for tests.test_1" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="avaliacao_pos_eta2026_automacao" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <option name="RUN_TOOL" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.test_1&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Python tests for tests.test_3.test_ct03_pesquisa_filtra_clientes_por_qualquer_coluna" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="avaliacao_pos_eta2026_automacao" />
       <option name="ENV_FILES" value="" />
@@ -157,7 +174,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for tests.teste_1.test_ct02_adicionar_cliente_exibe_mensagem_de_sucesso" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for tests.test_3.test_ct03_pesquisa_filtra_clientes_por_qualquer_coluna" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="avaliacao_pos_eta2026_automacao" />
       <option name="ENV_FILES" value="" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -170,14 +187,33 @@
       <option name="DEBUG_JUST_MY_CODE" value="false" />
       <option name="RUN_TOOL" value="" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.teste_1.test_ct02_adicionar_cliente_exibe_mensagem_de_sucesso&quot;" />
+      <option name="_new_target" value="&quot;tests.test_3.test_ct03_pesquisa_filtra_clientes_por_qualquer_coluna&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for tests.test_ct09.test_ct09_registrar_deposito_e_saque_no_extrato" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="avaliacao_pos_eta2026_automacao" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <option name="RUN_TOOL" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.test_ct09.test_ct09_registrar_deposito_e_saque_no_extrato&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python tests.Python tests for tests.test_3.test_ct03_pesquisa_filtra_clientes_por_qualquer_coluna" />
-        <item itemvalue="Python tests.Python tests for tests.teste_1.test_ct02_adicionar_cliente_exibe_mensagem_de_sucesso" />
+        <item itemvalue="Python tests.Python tests for tests.test_ct09.test_ct09_registrar_deposito_e_saque_no_extrato" />
+        <item itemvalue="Python tests.Python tests for tests.test_3.test_ct03_pesquisa_filtra_clientes_por_qualquer_coluna" />
+        <item itemvalue="Python tests.Python tests for tests.test_1" />
       </list>
     </recent_temporary>
   </component>

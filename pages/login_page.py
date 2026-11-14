@@ -8,6 +8,7 @@ class LoginPage(BasePage):
     URL_ACCOUNT = "https://www.globalsqa.com/angularJs-protractor/BankingProject/#/account"
     CUSTOMER_LOGIN_BUTTON = (By.CSS_SELECTOR, "[class='ng-scope'] button[ng-click='customer()']")
     CUSTOMER_SELECT = (By.CSS_SELECTOR, "#userSelect")
+    LOGIN_BANK_MANAGER_LOGIN_BUTTON = (By.CSS_SELECTOR, "button[ng-click='manager()']")
 
     LOGIN_BUTTON = (By.CSS_SELECTOR, "form[role='form'] button")
 
@@ -20,6 +21,9 @@ class LoginPage(BasePage):
 
         self.clicar_no_elemento(self.LOGIN_BUTTON)
         self.esperar_pela_url(self.URL_ACCOUNT)
+
+    def logar_como_gerente_banco(self):
+        self.clicar_no_elemento(self.LOGIN_BANK_MANAGER_LOGIN_BUTTON)
 
 
         
