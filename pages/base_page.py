@@ -35,6 +35,11 @@ class BasePage:
         select = Select(dropdown)
         return select.select_by_value(option_text)
 
+    def selecionar_opcao_pelo_texto_visivel(self, locator, visible_text):
+        dropdown = self.encontrar_elemento(locator)
+        select = Select(dropdown)
+        return select.select_by_visible_text(visible_text)
+
     def pegar_texto_do_elemento(self, locator):
         return self.encontrar_elemento(locator).text
 
