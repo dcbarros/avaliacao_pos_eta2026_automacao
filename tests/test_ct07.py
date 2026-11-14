@@ -1,6 +1,6 @@
 import time
 
-class TestCT09:
+class TestCT07:
 
     def test_Depositar_valor_na_conta(self, login_page, customers_page):
         login_page.logar_como_usuario_cliente("2")
