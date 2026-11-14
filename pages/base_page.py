@@ -62,3 +62,12 @@ class BasePage:
 
     def confirmar_alerta(self):
         self._wait.until(EC.alert_is_present()).accept()
+
+    def definir_valor_via_js(self, locator, value):
+        element = self.encontrar_elemento(locator)
+        script = """
+        arguments[0].value = arguments[1];
+        arguments[0].dispatchEvent(new Event('input', { bubbles: true }));
+        arguments[0].dispatchEvent(new Event('change', { bubbles: true }));
+        """
+        self._driver.execute_script(script, element, value)

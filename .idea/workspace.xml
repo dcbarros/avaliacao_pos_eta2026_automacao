@@ -5,16 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="248207e0-6411-4d7e-8d32-26fc23d3a5eb" name="Changes" comment="Opaaaaa">
+      <change afterPath="$PROJECT_DIR$/pages/account_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/transactions_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_ct09.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_ct10.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_ct11.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/core/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/core/application.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/base_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/base_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pytest.ini" beforeDir="false" afterPath="$PROJECT_DIR$/pytest.ini" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/conftest.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
@@ -26,12 +36,71 @@
     &quot;assignee&quot;: &quot;mvfs2-ops&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings">{
-  &quot;selectedUrlAndAccountId&quot;: {
-    &quot;url&quot;: &quot;https://github.com/dcbarros/avaliacao_pos_eta2026_automacao.git&quot;,
-    &quot;accountId&quot;: &quot;9d0006aa-0e9a-4985-a19c-3b0b99111e76&quot;
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/dcbarros/avaliacao_pos_eta2026_automacao.git",
+    "accountId": "2ba9eb0d-dd25-4fb4-8c5b-7ca3868f839e"
   }
-}</component>
+}]]></component>
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.3705758856544228" />
+      <entry key="MS500" value="2.9927663817525505" />
+      <entry key="S2" value="4.311277787942134" />
+      <entry key="S5" value="4.704331962100355" />
+      <entry key="S10" value="4.848552492496774" />
+      <entry key="S30" value="4.952359857172793" />
+      <entry key="S60" value="5.034821784418868" />
+      <entry key="M2" value="5.233238338082699" />
+      <entry key="M5" value="5.60139134183043" />
+      <entry key="M10" value="6.28808318206171" />
+      <entry key="M15" value="7.1487705715948495" />
+      <entry key="M30" value="9.211124132465434" />
+      <entry key="H1" value="11.283090920139477" />
+      <entry key="H2" value="12.844208271959399" />
+      <entry key="H4" value="13.829857709460784" />
+      <entry key="D1" value="14.790161879811437" />
+      <entry key="W1" value="14.969630018470182" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="0.0" />
+      <entry key="MS500" value="0.0" />
+      <entry key="S2" value="0.0" />
+      <entry key="S5" value="0.0" />
+      <entry key="S10" value="0.0" />
+      <entry key="S30" value="0.0" />
+      <entry key="S60" value="0.0" />
+      <entry key="M2" value="0.0" />
+      <entry key="M5" value="0.0" />
+      <entry key="M10" value="0.0" />
+      <entry key="M15" value="0.0" />
+      <entry key="M30" value="0.0" />
+      <entry key="H1" value="0.0" />
+      <entry key="H2" value="0.0" />
+      <entry key="H4" value="0.0" />
+      <entry key="D1" value="0.0" />
+      <entry key="W1" value="0.0" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="1.165621428295035" />
+      <entry key="MS500" value="2.9095522643333136" />
+      <entry key="S2" value="4.282487972486484" />
+      <entry key="S5" value="4.691871529979844" />
+      <entry key="S10" value="4.842149219977332" />
+      <entry key="S30" value="4.950180568699471" />
+      <entry key="S60" value="5.033689569643663" />
+      <entry key="M2" value="5.232609842433357" />
+      <entry key="M5" value="5.601072250923842" />
+      <entry key="M10" value="6.2877401360526965" />
+      <entry key="M15" value="7.148359398239006" />
+      <entry key="M30" value="9.210692713617634" />
+      <entry key="H1" value="11.282762254070201" />
+      <entry key="H2" value="12.844002147766524" />
+      <entry key="H4" value="13.829741657860332" />
+      <entry key="D1" value="14.790140454316749" />
+      <entry key="W1" value="14.96962690245338" />
+    </decayedShown>
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0,
   &quot;fromUser&quot;: false
@@ -51,7 +120,7 @@
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
-    "git-widget-placeholder": "feat/ct02",
+    "git-widget-placeholder": "feat/ct09",
     "junie.onboarding.icon.badge.shown": "true",
     "last_opened_file_path": "C:/Projeto_Avaliação_automação/avaliacao_pos_eta2026_automacao",
     "node.js.detected.package.eslint": "true",
@@ -65,6 +134,11 @@
     "to.speed.mode.migration.done": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\miche\PycharmProjects\AVALIAÇÃO_POS_ETA2026_AUTOMAÇÃO\avaliacao_pos_eta2026_automacao\pages" />
+    </key>
+  </component>
   <component name="RunManager" selected="Python tests.Python tests for tests.test_3.test_ct03_pesquisa_filtra_clientes_por_qualquer_coluna">
     <configuration name="Python tests for tests.test_3.test_ct03_pesquisa_filtra_clientes_por_qualquer_coluna" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="avaliacao_pos_eta2026_automacao" />
