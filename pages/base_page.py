@@ -7,58 +7,58 @@ class BasePage:
         self._driver = driver
         self._wait = WebDriverWait(driver, 10)
 
-    def find_element(self, locator):
+    def encontrar_elemento(self, locator):
         return self._wait.until(EC.visibility_of_element_located(locator))
 
-    def find_elements(self, locator):
+    def encontrar_elementos(self, locator):
         return self._wait.until(EC.visibility_of_all_elements_located(locator))
 
-    def click_element(self, locator):
+    def clicar_no_elemento(self, locator):
         self._wait.until(EC.element_to_be_clickable(locator)).click()
 
-    def type_text(self, locator, text):
-        element = self.find_element(locator)
+    def escrever_texto(self, locator, text):
+        element = self.encontrar_elemento(locator)
         element.clear()
         element.send_keys(text)
 
-    def clear_text(self, locator):
-        self.find_element(locator).clear()
-
-    def wait_for_elements_count(self, locator, count):
+    def limpar_texto(self, locator):
+        self.encontrar_elemento(locator).clear()
+    
+    def esperar_para_contar_elemento(self, locator, count):
         return self._wait.until(
             lambda driver: len(driver.find_elements(*locator)) == count,
             message=f"O locator {locator} não exibiu {count} elemento(s)"
         )
 
-    def select_dropdown_option(self, locator, option_text):
-        dropdown = self.find_element(locator)
+    def selecionar_opcao_pelo_valor(self, locator, option_text):
+        dropdown = self.encontrar_elemento(locator)
         select = Select(dropdown)
         return select.select_by_value(option_text)
 
-    def get_text(self, locator):
-        return self.find_element(locator).text
+    def pegar_texto_do_elemento(self, locator):
+        return self.encontrar_elemento(locator).text
 
-    def wait_for_url(self, url):
+    def esperar_pela_url(self, url):
         return bool(self._wait.until(EC.url_to_be(url)))
 
-    def element_have_text(self, locator, text):
+    def elemento_possui_texto(self, locator, text):
         return self._wait.until(
             EC.text_to_be_present_in_element(locator, text),
             message=f"O elemento {locator} não apresentou o texto '{text}'"
         )
 
-    def element_have_attribute(self, locator, attribute, value):
+    def elemento_possui_atributo(self, locator, attribute, value):
         return bool(self._wait.until(EC.presence_of_element_located(locator)) and
-                    self.find_element(locator).get_attribute(attribute) == value)
+                    self.encontrar_elemento(locator).get_attribute(attribute) == value)
 
     # Alerts nativos (window.alert) ficam fora do DOM: não têm locator,
     # por isso a leitura é feita trocando o foco do driver para o alert.
-    def get_alert_text(self):
+    def pegar_texto_do_alerta(self):
         alert = self._wait.until(
             EC.alert_is_present(),
             message="Nenhum alert foi exibido na tela"
         )
         return alert.text
 
-    def accept_alert(self):
+    def confirmar_alerta(self):
         self._wait.until(EC.alert_is_present()).accept()

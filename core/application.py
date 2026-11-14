@@ -14,7 +14,7 @@ class XYZBankApp:
         self.customers_page: CustomersPage | None = None
 
     def __enter__(self):
-        driver = self.__browser.start()
+        driver = self.__browser.iniciar()
 
         try:
             self.login_page = LoginPage(driver)
@@ -22,10 +22,10 @@ class XYZBankApp:
             self.add_customer_page = AddCustomerPage(driver)
             self.customers_page = CustomersPage(driver)
         except BaseException:
-            self.__browser.close()
+            self.__browser.fechar()
             raise
 
         return self
 
     def __exit__(self, exc_type, exc_value, traceback):
-        self.__browser.close()
+        self.__browser.fechar()

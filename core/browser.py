@@ -8,7 +8,7 @@ class BrowserSession:
     def __init__(self):
         self._driver: WebDriver | None = None
 
-    def start(self) -> WebDriver:
+    def iniciar(self) -> WebDriver:
         if self._driver is not None:
             raise RuntimeError("A sessão do navegador já foi iniciada.")
 
@@ -20,7 +20,7 @@ class BrowserSession:
         self._driver = webdriver.Chrome(options=options)
         return self._driver
 
-    def close(self) -> None:
+    def fechar(self) -> None:
         if self._driver is not None:
             try:
                 self._driver.quit()

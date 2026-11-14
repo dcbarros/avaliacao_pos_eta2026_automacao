@@ -1,4 +1,6 @@
+from pages.base_page import BasePage
+
 class CustomersPage(BasePage):
 
-    def metodo1(self):
+    def seleciona_conta_cliente(self):
         pass
