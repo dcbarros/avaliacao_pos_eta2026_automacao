@@ -14,5 +14,12 @@ def login_page(app):
 
 @pytest.fixture()
 def manager_page(app):
-    app.manager_page.open()
     return app.manager_page
+
+@pytest.fixture()
+def customers_page(app):
+    return app.customers_page
+
+@pytest.fixture()
+def add_customer_page(app):
+    return app.add_customer_page
