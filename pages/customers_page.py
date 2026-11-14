@@ -9,6 +9,7 @@ class CustomersPage(BasePage):
     ACCOUNT_INFOS = (By.XPATH, "//*[contains(text(),'Account Number : ')]//strong")
     ACCOUNT_DEPOSIT_BUTTON = (By.XPATH, "//button[contains(text(),'Deposit')]")
     ACCOUNT_WITHDRAWL_BUTTON = (By.XPATH, "//button[contains(text(),'Withdrawl')]")
+    ACCOUNT_TRANSACTIONS_BUTTON = (By.XPATH, "//button[contains(text(),'Transactions')]")
     ACCOUNT_LABEL = (By.CSS_SELECTOR, '.form-group label')
     ACCOUNT_AMOUNT_INPUT = (By.CSS_SELECTOR, '.form-group input')
     ACCOUNT_AMOUNT_BUTTON = (By.XPATH, '//button[@type="submit"]')
@@ -20,6 +21,9 @@ class CustomersPage(BasePage):
 
     def pegar_url(self):
         return self.pegar_url_atual()
+
+    def acessar_pagina_transacoes(self):
+        return self.clicar_no_elemento(self.ACCOUNT_TRANSACTIONS_BUTTON)
     
     def seleciona_conta_cliente(self, account_number):
         return self.selecionar_opcao_pelo_texto_visivel(self.ACCOUNT_SELECT, account_number)
