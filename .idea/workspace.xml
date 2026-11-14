@@ -5,6 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="248207e0-6411-4d7e-8d32-26fc23d3a5eb" name="Changes" comment="Opaaaaa">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/account_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/account_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/add_customer_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/add_customer_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/base_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/base_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/login_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/manager_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/manager_page.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_ct12.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_ct12.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_ct13.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_ct13.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_ct14.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_ct14.py" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/tests/teste_4.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/add_customer_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/pages/add_customer_page.py" afterDir="false" />
@@ -26,6 +35,11 @@
   </component>
   <component name="Git.Settings">
     <option name="PUSH_AUTO_UPDATE" value="true" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -114,12 +128,18 @@
     "Python tests.Python tests for tests.test_3.test_ct03_pesquisa_filtra_clientes_por_qualquer_coluna.executor": "Run",
     "Python tests.Python tests for tests.test_ct09.test_ct09_registrar_deposito_e_saque_no_extrato.executor": "Run",
     "Python tests.Python tests for tests.teste_2.test_ct02_adicionar_cliente_exibe_mensagem_de_sucesso.executor": "Run",
+    "Python tests.Python tests in test_ct09.py.executor": "Run",
+    "Python tests.Python tests in test_ct12.py.executor": "Run",
+    "Python tests.Python tests in test_ct13.py.executor": "Run",
+    "Python tests.Python tests in test_ct14.py.executor": "Run",
+    "Python tests.Python tests in tests.executor": "Run",
     "Python tests.Python tests for tests.teste_3.test_ct03_pesquisa_filtra_clientes_por_qualquer_coluna.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.ml.llm.matterhorn.ej.ui.settings.DefaultModelSelectionForGA.v1": "true",
+    "git-widget-placeholder": "feat/ct12-ct13-ct14",
     "git-widget-placeholder": "feat/ct03",
     "junie.onboarding.icon.badge.shown": "true",
     "last_opened_file_path": "C:/Projeto_Avaliação_automação/avaliacao_pos_eta2026_automacao",
@@ -139,6 +159,8 @@
       <recent name="C:\Users\miche\PycharmProjects\AVALIAÇÃO_POS_ETA2026_AUTOMAÇÃO\avaliacao_pos_eta2026_automacao\pages" />
     </key>
   </component>
+  <component name="RunManager" selected="Python tests.Python tests in test_ct09.py">
+    <configuration name="Python tests in test_ct09.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
   <component name="RunManager" selected="Python tests.Python tests for tests.test_3.test_ct03_pesquisa_filtra_clientes_por_qualquer_coluna">
     <configuration name="Python tests for tests.test_1" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="avaliacao_pos_eta2026_automacao" />
@@ -168,12 +190,14 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="RUN_TOOL" value="" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.test_3.test_ct03_pesquisa_filtra_clientes_por_qualquer_coluna&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_ct09.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="Python tests in test_ct12.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
     <configuration name="Python tests for tests.test_3.test_ct03_pesquisa_filtra_clientes_por_qualquer_coluna" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="avaliacao_pos_eta2026_automacao" />
       <option name="ENV_FILES" value="" />
@@ -185,8 +209,14 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="RUN_TOOL" value="" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_ct12.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests in test_ct13.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <option name="_new_target" value="&quot;tests.test_3.test_ct03_pesquisa_filtra_clientes_por_qualquer_coluna&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
@@ -202,6 +232,47 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_ct13.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests in test_ct14.py" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="avaliacao_pos_eta2026_automacao" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests/test_ct14.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests in tests" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="avaliacao_pos_eta2026_automacao" />
+      <option name="ENV_FILES" value="" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="DEBUG_JUST_MY_CODE" value="false" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="RUN_TOOL" value="" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/tests&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
       <option name="RUN_TOOL" value="" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;tests.test_ct09.test_ct09_registrar_deposito_e_saque_no_extrato&quot;" />
@@ -210,6 +281,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests in test_ct09.py" />
+        <item itemvalue="Python tests.Python tests in test_ct14.py" />
+        <item itemvalue="Python tests.Python tests in test_ct13.py" />
+        <item itemvalue="Python tests.Python tests in test_ct12.py" />
+        <item itemvalue="Python tests.Python tests in tests" />
         <item itemvalue="Python tests.Python tests for tests.test_3.test_ct03_pesquisa_filtra_clientes_por_qualquer_coluna" />
         <item itemvalue="Python tests.Python tests for tests.test_ct09.test_ct09_registrar_deposito_e_saque_no_extrato" />
         <item itemvalue="Python tests.Python tests for tests.test_3.test_ct03_pesquisa_filtra_clientes_por_qualquer_coluna" />
@@ -290,5 +366,8 @@
     <MESSAGE value="vai que funcione." />
     <MESSAGE value="Opaaaaa" />
     <option name="LAST_COMMIT_MESSAGE" value="Opaaaaa" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/avaliacao_pos_eta2026_automacao$.coverage" NAME=" Coverage Results" MODIFIED="1794682848988" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
