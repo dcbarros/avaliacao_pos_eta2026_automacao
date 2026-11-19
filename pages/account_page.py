@@ -18,6 +18,11 @@ class AccountPage(BasePage):
     SUBMIT_BTN = (By.CSS_SELECTOR, "form[ng-submit] button[type='submit']")
     FEEDBACK_MESSAGE = (By.CSS_SELECTOR, "span[ng-show='message']")
 
+    BOAS_VINDAS = (By.XPATH, "//strong[contains(normalize-space(),'Welcome')]")
+
+    def pegar_texto_boas_vindas(self):
+        return self.pegar_texto_do_elemento(self.BOAS_VINDAS)
+
     def validar_url_conta(self):
         return self.esperar_pela_url(self.URL)
 

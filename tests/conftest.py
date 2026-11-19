@@ -23,3 +23,11 @@ def customers_page(app):
 @pytest.fixture()
 def add_customer_page(app):
     return app.add_customer_page
+
+@pytest.fixture()
+def transactions_page(app):
+    return app.transactions_page
+
+@pytest.fixture()
+def deposit_page(app):
+    return app.deposit_page
