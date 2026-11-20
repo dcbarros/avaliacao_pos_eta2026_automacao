@@ -5,7 +5,7 @@ def test_ct14_novo_cliente_acessa_conta(app):
     app.login_page.open()
     app.login_page.ir_para_manager()
 
-    app.manager_page.ir_para_add_customer()
+    app.manager_page.ir_para_add_customer_tab()
     texto_cliente = app.add_customer_page.adicionar_cliente("Aluno", "QA", "50000")
     id_cliente = re.search(r"customer id\s*:?\s*(\d+)", texto_cliente).group(1)
 

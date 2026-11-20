@@ -16,6 +16,7 @@ class CustomersPage(BasePage):
     SEARCH_INPUT = (By.CSS_SELECTOR, "input[ng-model='searchCustomer']")
     CUSTOMER_ROWS = (By.CSS_SELECTOR, "table tbody tr")
     CELLS = (By.TAG_NAME, "td")
+    FIRST_NAME_HEADER = (By.CSS_SELECTOR, "a[ng-click*=\"'fName'\"]")
 
     AMOUNT_MESSAGE_SUCCESSFUL = (By.CSS_SELECTOR, '[ng-show="message"]')
 
@@ -77,6 +78,14 @@ class CustomersPage(BasePage):
             celulas = linha.find_elements(*self.CELLS)
             clientes.append((celulas[0].text, celulas[1].text, celulas[2].text))
         return clientes
+
+    def ordenar_por_primeiro_nome(self):
+        """Clica no título da coluna First Name (cada clique inverte a ordem)."""
+        self.clicar_no_elemento(self.FIRST_NAME_HEADER)
+
+    def pegar_primeiros_nomes(self):
+        """Retorna os valores da coluna First Name, na ordem em que aparecem na tabela."""
+        return [primeiro_nome for primeiro_nome, _, _ in self.pegar_clientes()]
 
     def pegar_contas_do_cliente(self, primeiro_nome, ultimo_nome):
         """Retorna os números da coluna Account Number do cliente (lista vazia se ele não aparecer)."""
