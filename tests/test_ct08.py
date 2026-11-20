@@ -1,3 +1,5 @@
+import time
+
 class TestCT08:
     def test_ct08_impedir_saque_maior_que_o_saldo(self, login_page, customers_page, transactions_page):
         login_page.logar_como_usuario_cliente("2")
@@ -15,8 +17,10 @@ class TestCT08:
         customers_page.acessar_pagina_transacoes()
         transactions_page.validar_quantidade_linhas(1)
         for operacao in transactions_page.coletar_transacoes():
-            if(operacao["valor"] == 500 and operacao["tipo"] == "Credit"):
+            if(operacao["valor"] == 800 and operacao["tipo"] == "Debit"):
                 deposito_realizado = True
+
+        
 
         assert deposito_realizado == False, "A operação de transferência foi registrada."
 
