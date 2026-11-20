@@ -1,4 +1,5 @@
 from selenium.webdriver.common.by import By
+from selenium.common.exceptions import TimeoutException
 from pages.base_page import BasePage
 
 
@@ -24,8 +25,25 @@ class TransactionsPage(BasePage):
         self.definir_valor_via_js(self.START_DATE_INPUT, data_inicio_iso)
         self.definir_valor_via_js(self.END_DATE_INPUT, data_fim_iso)
 
+    def selecionar_periodo_disponivel(self):
+        data_inicial = self._wait.until(
+            lambda driver: driver.find_element(*self.START_DATE_INPUT).get_dom_attribute("min"),
+            message="O extrato não informou a data inicial mínima",
+        )
+        data_final = self._wait.until(
+            lambda driver: driver.find_element(*self.END_DATE_INPUT).get_dom_attribute("max"),
+            message="O extrato não informou a data final máxima",
+        )
+        self.filtrar_por_periodo(data_inicial, data_final)
+
     def validar_quantidade_linhas(self, quantidade):
-        return self.esperar_para_contar_elemento(self.TABLE_ROWS, quantidade)
+        try:
+            return self.esperar_para_contar_elemento(self.TABLE_ROWS, quantidade)
+        except TimeoutException as erro:
+            raise AssertionError(
+                f"Esperava {quantidade} linha(s) no extrato. "
+                f"Transações exibidas: {self.coletar_transacoes()!r}"
+            ) from erro
 
     def coletar_transacoes(self):
         rows = self._driver.find_elements(*self.TABLE_ROWS)
