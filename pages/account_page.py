@@ -19,9 +19,24 @@ class AccountPage(BasePage):
     FEEDBACK_MESSAGE = (By.CSS_SELECTOR, "span[ng-show='message']")
 
     BOAS_VINDAS = (By.XPATH, "//strong[contains(normalize-space(),'Welcome')]")
+    AVISO_SEM_CONTA = (By.XPATH, "//*[normalize-space(text())='Please open an account with us.']")
 
     def pegar_texto_boas_vindas(self):
         return self.pegar_texto_do_elemento(self.BOAS_VINDAS)
+
+    def pegar_texto_aviso_sem_conta(self):
+        return self.pegar_texto_do_elemento(self.AVISO_SEM_CONTA)
+
+    def operacoes_bancarias_visiveis(self):
+        botoes = {
+            "Transactions": self.BTN_TRANSACTIONS,
+            "Deposit": self.BTN_DEPOSIT_TAB,
+            "Withdrawl": self.BTN_WITHDRAWL_TAB,
+        }
+        return [
+            nome for nome, locator in botoes.items()
+            if any(botao.is_displayed() for botao in self._driver.find_elements(*locator))
+        ]
 
     def validar_url_conta(self):
         return self.esperar_pela_url(self.URL)

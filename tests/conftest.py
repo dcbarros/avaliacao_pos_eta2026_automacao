@@ -21,6 +21,10 @@ def customers_page(app):
     return app.customers_page
 
 @pytest.fixture()
+def account_page(app):
+    return app.account_page
+
+@pytest.fixture()
 def add_customer_page(app):
     return app.add_customer_page
 

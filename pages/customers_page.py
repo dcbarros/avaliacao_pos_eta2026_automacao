@@ -15,7 +15,11 @@ class CustomersPage(BasePage):
     ACCOUNT_AMOUNT_BUTTON = (By.XPATH, '//button[@type="submit"]')
     SEARCH_INPUT = (By.CSS_SELECTOR, "input[ng-model='searchCustomer']")
     CUSTOMER_ROWS = (By.CSS_SELECTOR, "table tbody tr")
+    BOTAO_EXCLUIR_CLIENTE_FILTRADO = (
+        By.XPATH, "//table/tbody/tr[count(../tr)=1]//button[normalize-space()='Delete']"
+    )
     CELLS = (By.TAG_NAME, "td")
+    CABECALHO_FIRST_NAME = (By.XPATH, "//table//thead//a[normalize-space()='First Name']")
 
     AMOUNT_MESSAGE_SUCCESSFUL = (By.CSS_SELECTOR, '[ng-show="message"]')
 
@@ -64,11 +68,24 @@ class CustomersPage(BasePage):
     def pesquisar(self, texto):
         self.escrever_texto(self.SEARCH_INPUT, texto)
 
+    def excluir_cliente_filtrado(self):
+        self.clicar_no_elemento(self.BOTAO_EXCLUIR_CLIENTE_FILTRADO)
+
     def esperar_quantidade_de_clientes(self, quantidade):
         return self.esperar_para_contar_elemento(self.CUSTOMER_ROWS, quantidade)
 
     def limpar_pesquisa(self):
         self.limpar_texto(self.SEARCH_INPUT)
+
+    def ordenar_por_primeiro_nome(self):
+        self.clicar_no_elemento(self.CABECALHO_FIRST_NAME)
+
+    def pegar_numeros_de_conta_do_cliente(self, primeiro_nome, sobrenome):
+        for linha in self.encontrar_elementos(self.CUSTOMER_ROWS):
+            celulas = linha.find_elements(*self.CELLS)
+            if (celulas[0].text, celulas[1].text) == (primeiro_nome, sobrenome):
+                return celulas[3].text.split()
+        raise AssertionError(f"Cliente {primeiro_nome} {sobrenome} não encontrado")
 
     def pegar_clientes(self):
         """Retorna (First Name, Last Name, Post Code) de cada cliente exibido na tabela."""
