@@ -15,6 +15,9 @@ class CustomersPage(BasePage):
     ACCOUNT_AMOUNT_BUTTON = (By.XPATH, '//button[@type="submit"]')
     SEARCH_INPUT = (By.CSS_SELECTOR, "input[ng-model='searchCustomer']")
     CUSTOMER_ROWS = (By.CSS_SELECTOR, "table tbody tr")
+    BOTAO_EXCLUIR_CLIENTE_FILTRADO = (
+        By.XPATH, "//table/tbody/tr[count(../tr)=1]//button[normalize-space()='Delete']"
+    )
     CELLS = (By.TAG_NAME, "td")
     CABECALHO_FIRST_NAME = (By.XPATH, "//table//thead//a[normalize-space()='First Name']")
 
@@ -64,6 +67,9 @@ class CustomersPage(BasePage):
 
     def pesquisar(self, texto):
         self.escrever_texto(self.SEARCH_INPUT, texto)
+
+    def excluir_cliente_filtrado(self):
+        self.clicar_no_elemento(self.BOTAO_EXCLUIR_CLIENTE_FILTRADO)
 
     def esperar_quantidade_de_clientes(self, quantidade):
         return self.esperar_para_contar_elemento(self.CUSTOMER_ROWS, quantidade)
