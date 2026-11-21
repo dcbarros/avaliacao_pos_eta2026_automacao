@@ -6,6 +6,7 @@ from selenium.webdriver.common.by import By
 
 class ManagerPage(BasePage):
     URL = "https://www.globalsqa.com/angularJs-protractor/BankingProject/#/manager"
+    URL_OPEN_ACCOUNT = f"{URL}/openAccount"
 
     ABA_ADD_CUSTOMER = (
         By.XPATH,
@@ -23,7 +24,13 @@ class ManagerPage(BasePage):
         self.clicar_no_elemento(self.ABA_ADD_CUSTOMER)
 
     def abrir_conta(self, id_cliente, moeda):
+        self.ir_para_open_account()
+        return self.processar_abertura_de_conta(id_cliente, moeda)
+
+    def ir_para_open_account(self):
         self.clicar_no_elemento(self.ABA_OPEN_ACCOUNT)
+
+    def processar_abertura_de_conta(self, id_cliente, moeda):
         self.selecionar_opcao_pelo_valor(self.SELECIONAR_CLIENTE, id_cliente)
         self.selecionar_opcao_pelo_valor(self.SELECIONAR_MOEDA, moeda)
         self.clicar_no_elemento(self.BOTAO_PROCESSAR)
